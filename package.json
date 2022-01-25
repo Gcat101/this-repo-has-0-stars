@@ -1,0 +1,20 @@
+{
+  "dependencies": {
+    "github-api": "^3.4.0"
+  },
+  "name": "this-repo-has-n-stars",
+  "version": "1.0.0",
+  "description": "Inspired by Tom Scott",
+  "main": "github.js",
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "github",
+    "git",
+    "stars"
+  ],
+  "author": "G_cat",
+  "license": "GPL-3.0"
+}
