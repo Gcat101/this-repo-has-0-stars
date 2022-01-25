@@ -1,17 +1,27 @@
-const github = require('github-api')
+// Imports
+const github = require('github-api') // Github
 
+// Github session
 const gh = new github({
-    token: process.env.GH_API
+    token: process.env.GH_API // Get token from env
 })
 
-gh.getUser('Gcat101').listRepos().then(p => {
+// Find repo
+gh.getUser('Gcat101').listRepos().then(p => { // List all repos
     p.data.forEach(el => {
-        if (el.name.match(/this-repo-has-\d*-stars/)) {
-            repo = gh.getRepo('Gcat101', el.name)
+        if (el.name.match(/this-repo-has-\d*-stars/)) { // Filter
+            repo = gh.getRepo('Gcat101', el.name) // Get repo
 
-            repo.updateRepository({name: `this-repo-has-${el.stargazers_count}-stars`})
-
+            repo.updateRepository({name: `this-repo-has-${el.stargazers_count}-stars`}) // Update name
+            
+            // readme
             readme = `# this-repo-has-${el.stargazers_count}-stars
+
+[![forthebadge](https://forthebadge.com/images/badges/makes-people-smile.svg)](https://forthebadge.com)
+[![forthebadge](https://forthebadge.com/images/badges/made-with-javascript.svg)](https://forthebadge.com)
+
+[![contributions](https://img.shields.io/badge/contributions-welcome-green)](https://img.shields.io/badge/contributions-welcome-green)
+[![GitHub stars](https://img.shields.io/github/stars/Gcat101/this-repo-has-n-stars.svg?style=social&label=Star&maxAge=2592000)](https://GitHub.com/Gcat101/this-repo-has-n-stars/stargazers/)
 
 ${1000 - el.stargazers_count} stars until 1000!
 
@@ -50,7 +60,7 @@ yes but i'm lazy
 ## Contributions
 
 Welcome.`
-            repo.writeFile('master', 'README.md', readme, `${el.stargazers_count} stars!`)
+            repo.writeFile('master', 'README.md', readme, `${el.stargazers_count} stars!`) // Update readme
         }
     })
 })
