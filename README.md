@@ -1,5 +1,11 @@
 # this-repo-has-1-stars
 
+[![forthebadge](https://forthebadge.com/images/badges/makes-people-smile.svg)](https://forthebadge.com)
+[![forthebadge](https://forthebadge.com/images/badges/made-with-javascript.svg)](https://forthebadge.com)
+
+[![contributions](https://img.shields.io/badge/contributions-welcome-green)](https://img.shields.io/badge/contributions-welcome-green)
+[![GitHub stars](https://img.shields.io/github/stars/Gcat101/this-repo-has-n-stars.svg?style=social&label=Star&maxAge=2592000)](https://GitHub.com/Gcat101/this-repo-has-n-stars/stargazers/)
+
 999 stars until 1000!
 
 ## FAQ
