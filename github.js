@@ -31,7 +31,7 @@ ${1000 - el.stargazers_count} stars until 1000!
 
 ### What?
 
-Welcome to a dynamic repo that updates everytime someone stars it (not really)
+Welcome to a dynamic repo that updates everytime someone stars it!
 
 ### How?
 
