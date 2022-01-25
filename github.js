@@ -30,7 +30,7 @@ Because it looks cool!
 ## Can you do more?
 
 yes but i'm lazy`
-            repo.writeFile('main', 'README.md', readme, `${el.stargazers_count} stars!`)
+            repo.writeFile('master', 'README.md', readme, `${el.stargazers_count} stars!`)
         }
     })
 })
