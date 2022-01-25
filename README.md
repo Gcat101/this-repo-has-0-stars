@@ -14,7 +14,7 @@
 
 ### What?
 
-Welcome to a dynamic repo that updates everytime someone stars it (not really)
+Welcome to a dynamic repo that updates everytime someone stars it!
 
 ### How?
 
